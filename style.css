@@ -8,16 +8,21 @@
     src: url('.//assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: inter;
+    src: url('.//assets/fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
 :root {
     --color-background: #080808;
-    --color-text: #e7f5e7;
+    --color-text: #F5F5F5;
 
     --color-ascent: #C7FF3D;
-    --color-muted: #849684;
+    --color-muted: #e7f5e7;
 
     --font-family-primary: 'grotesk,sans-serif';
     --font-family-secondary: 'jetbrain, mono';
-
+    --font-family-tri: 'inter';
 }
 
 * {
@@ -29,7 +34,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 html {
@@ -39,4 +44,106 @@ html {
 body {
     background-color: var(--color-background);
     color: var(--color-text);
+    font-family: var(--font-family-primary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 5rem;
+    padding: 2.1rem 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar p {
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    font-family: jetbrain;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.navbar .nar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--color-muted);
+    font-family: inter;
+    font-size: 0.8rem;
+    letter-spacing: -0.03rem;
+    font-weight: 300;
+    opacity: 0.6;
+
+}
+
+.divider {
+    color: var(--color-muted);
+    opacity: 0.1;
+}
+
+.nav-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-social a {
+    color: var(--color-muted);
+    font-family: jetbrain;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.nav-menu li a:hover,
+.nav-social li a:hover {
+    color: var(--color-ascent);
+    opacity: 1;
+}
+
+.nav-social .nav-social-resume a {
+    color: var(--color-ascent);
+    opacity: 1;
+}
+.nav-social .nav-social-resume a:hover {
+    color: var(--color-text);
+    opacity: 1;
 }
