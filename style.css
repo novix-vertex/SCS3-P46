@@ -386,6 +386,7 @@ header.scrolled {
 .about {
     min-height: 100vh;
     padding: 8rem 8rem 6rem;
+    border-top: 1px solid var(--color-border);
 }
 
 
@@ -492,6 +493,8 @@ header.scrolled {
 .expertise {
     min-height: 100vh;
     padding: 8rem 8rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
 
@@ -604,16 +607,13 @@ header.scrolled {
 }
 
 
-/* =========================
-   PROJECTS SECTION
-========================= */
-
 .projects {
     min-height: 100vh;
     padding: 8rem 5rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
-/* Label */
 
 .projects-label {
     margin-bottom: 2.5rem;
@@ -626,7 +626,6 @@ header.scrolled {
     font-weight: 400;
 }
 
-/* Heading */
 
 .projects-title {
     font-family: var(--font-family-primary);
@@ -636,7 +635,6 @@ header.scrolled {
     font-weight: 500;
 }
 
-/* Intro */
 
 .projects-intro {
     margin-top: 2.5rem;
@@ -649,7 +647,6 @@ header.scrolled {
     line-height: 1.6;
 }
 
-/* Divider */
 
 .projects-divider {
     width: 100%;
@@ -668,6 +665,7 @@ header.scrolled {
     gap: 4rem;
 
     padding: 3rem 1.5rem 0;
+
 }
 
 
@@ -805,6 +803,8 @@ header.scrolled {
 .experience {
     min-height: 100vh;
     padding: 8rem 6rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
 
@@ -979,6 +979,8 @@ header.scrolled {
 .education {
     min-height: 100vh;
     padding: 8rem 6rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
 
@@ -1082,6 +1084,8 @@ header.scrolled {
 .workflow {
     min-height: 100vh;
     padding: 8rem 6rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
 
@@ -1154,6 +1158,8 @@ header.scrolled {
 .technical {
     min-height: 100vh;
     padding: 8rem 6rem 6rem;
+    border-top: 1px solid var(--color-border);
+
 }
 
 .technical-label {
@@ -1389,4 +1395,204 @@ header.scrolled {
     font-family: var(--font-family-secondary);
     font-size: 0.75rem;
     letter-spacing: 0.08rem;
+}
+
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem;
+    position: relative;
+    border-top: 1px solid var(--color-border);
+
+}
+
+.section-label {
+    color: var(--color-ascent);
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact-content {
+    margin-top: 2.5rem;
+}
+
+.contact-content h2 {
+    max-width: 65rem;
+    font-family: var(--font-family-primary);
+    font-size: 5.5rem;
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.15rem;
+}
+
+.contact-description {
+    max-width: 52rem;
+    margin-top: 3rem;
+    color: var(--color-secondary);
+    font-family: var(--font-family-tri);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.contact-button {
+    width: fit-content;
+    margin-top: 1.5rem;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 3rem;
+    background-color: var(--color-ascent);
+    color: var(--color-background);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.contact-button span {
+    font-size: 1rem;
+}
+
+.contact-button:hover {
+    background-color: var(--color-text);
+    transform: translateY(-0.2rem);
+}
+
+
+
+.contact-divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 4rem;
+    background-color: var(--color-border);
+}
+
+.connect-section {
+    margin-top: 2.5rem;
+}
+
+.connect-label {
+    color: var(--color-secondary);
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.contact-links {
+    margin-top: 2rem;
+}
+
+.contact-link {
+    width: 100%;
+    padding: 1.5rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--color-border);
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+
+    transition: all 0.3s ease;
+}
+
+.contact-link>span:first-child {
+    color: var(--color-text);
+}
+
+.contact-link-value {
+    color: var(--color-secondary);
+    font-family: var(--font-family-secondary);
+    font-size: 0.65rem;
+    letter-spacing: 0.12rem;
+}
+
+.contact-link:hover>span:first-child {
+    color: var(--color-ascent);
+}
+
+.contact-link:hover .contact-link-value {
+    color: var(--color-ascent);
+}
+
+.footer {
+    width: 100%;
+    min-height: 8rem;
+    padding: 2rem 8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+.footer-left p {
+    color: var(--color-text);
+}
+
+.footer-center p {
+    color: var(--color-secondary);
+}
+
+.footer-center2 p {
+    color: var(--color-ascent);
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.back-to-top {
+    padding: 0.75rem 1.25rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+
+    color: var(--color-text);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.12rem;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.back-to-top span {
+    font-size: 1rem;
+}
+
+.back-to-top:hover {
+    border-color: var(--color-ascent);
+    color: var(--color-ascent);
 }
