@@ -20,6 +20,11 @@
     --color-ascent: #C7FF3D;
     --color-muted: #e7f5e7;
 
+
+    --color-border: #ffffff12;
+    --color-glass: #080808aa;
+    --color-ascent-transparent: #c7ff3d1a;
+
     --font-family-primary: grotesk, sans-serif;
     --font-family-secondary: jetbrain, monospace;
     --font-family-tri: inter, sans-serif;
@@ -71,10 +76,10 @@ header {
 }
 
 header.scrolled {
-    background-color: #080808aa;
+    background-color: var(--color-glass);
     backdrop-filter: blur(1rem);
 
-    border-bottom: 1px solid #ffffff12;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .navbar {
@@ -325,4 +330,44 @@ header.scrolled {
 .process-item.active .process-dot {
     width: 1.05rem;
     height: 1.05rem;
+}
+
+.hero-status {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.2rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.12rem;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-ascent);
+
+    box-shadow: 0 0 0 0.5rem var(--color-ascent-transparent);
+}
+
+.status-text {
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.12rem;
+}
+
+.status-text span {
+    margin: 0 0.4rem;
 }
