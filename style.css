@@ -15,6 +15,7 @@
 
 :root {
     --color-background: #080808;
+    --color-background2: #101010;
     --color-text: #F5F5F5;
 
     --color-ascent: #C7FF3D;
@@ -27,6 +28,7 @@
 
     --color-card: #0c1008;
     --color-tag-border: #c7ff3d55;
+
 
     --color-grid: #ffffff0a;
     --color-project-border: #ffffff18;
@@ -216,7 +218,6 @@ header.scrolled {
 .hero h1 span {
     color: var(--color-ascent);
 }
-
 
 .hero-intro {
     max-width: 52rem;
@@ -916,7 +917,7 @@ header.scrolled {
     margin-top: 2.5rem;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 3rem;
     row-gap: 2.5rem;
 }
@@ -1147,4 +1148,245 @@ header.scrolled {
     font-family: var(--font-family-tri);
     font-size: 1rem;
     line-height: 1.7;
+}
+
+
+.technical {
+    min-height: 100vh;
+    padding: 8rem 6rem 6rem;
+}
+
+.technical-label {
+    margin-bottom: 2.5rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+
+.technical-title {
+    max-width: 70rem;
+
+    font-family: var(--font-family-primary);
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.08rem;
+    font-weight: 500;
+}
+
+.technical-intro {
+    max-width: 52rem;
+
+    margin-top: 3rem;
+
+    color: var(--color-muted);
+    opacity: 0.65;
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+.technical-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 3.5rem;
+
+    border: 1px solid var(--color-border);
+}
+
+
+.technical-card {
+    min-height: 10.5rem;
+
+    padding: 2.5rem 1.8rem;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.technical-card:last-child {
+    border-right: none;
+}
+
+.technical-card-label {
+    display: block;
+
+    margin-bottom: 1.3rem;
+
+    color: var(--color-muted);
+    opacity: 0.65;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.14rem;
+    font-weight: 400;
+}
+
+.technical-card p {
+    color: var(--color-text);
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.ai-section {
+    margin: 4rem 2rem;
+    padding: 3.5rem 3rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background2);
+}
+
+
+.ai-label {
+    margin-bottom: 1.8rem;
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+.ai-title {
+    font-family: var(--font-family-primary);
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    font-weight: 500;
+}
+
+.ai-intro {
+    max-width: 52rem;
+    margin-top: 2rem;
+
+    color: var(--color-muted);
+    opacity: 0.65;
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+.ai-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+
+    margin-top: 1.5rem;
+}
+
+.ai-topics span {
+    padding: 0.7rem 1rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+
+    color: var(--color-muted);
+    opacity: 0.7;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+}
+
+.ai-tools {
+    margin-top: 1rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.ai-tools span {
+    color: var(--color-muted);
+    opacity: 0.3;
+}
+
+
+
+.ai-divider {
+    width: 100%;
+    height: 1px;
+    margin: 3rem 0;
+
+    background-color: var(--color-border);
+}
+
+
+.ai-work-label {
+    margin-bottom: 1.5rem;
+    color: var(--color-muted);
+    opacity: 0.65;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.14rem;
+}
+
+
+.ai-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.ai-tab {
+    padding: 0.65rem 1.1rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+
+    background-color: transparent;
+    color: var(--color-muted);
+    opacity: 0.65;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-tab.active {
+    border-color: var(--color-ascent);
+    background-color: var(--color-ascent);
+    color: var(--color-background);
+    opacity: 1;
+}
+
+
+.ai-work-content {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.ai-work-content p {
+    color: var(--color-text);
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ai-work-content span {
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
 }
