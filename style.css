@@ -798,3 +798,178 @@ header.scrolled {
 .project-technologies span {
     margin: 0 0.4rem;
 }
+
+
+
+.experience {
+    min-height: 100vh;
+    padding: 8rem 6rem 6rem;
+}
+
+
+
+.experience-label {
+    margin-bottom: 2.5rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+
+
+.experience-title {
+    font-family: var(--font-family-primary);
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.08rem;
+    font-weight: 500;
+}
+
+
+
+.experience-divider {
+    width: 100%;
+    height: 1px;
+
+    margin-top: 3.5rem;
+
+    background-color: var(--color-border);
+}
+
+
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 4rem;
+
+    padding-top: 3rem;
+}
+
+
+.experience-date {
+    padding-top: 0.3rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.12rem;
+}
+
+
+
+.experience-content {
+    width: 100%;
+}
+
+
+
+.experience-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.experience-tab {
+    padding: 0.7rem 1.1rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+
+    transition: all 0.3s ease;
+}
+
+.experience-tab.active {
+    background-color: var(--color-ascent);
+    border-color: var(--color-ascent);
+
+    color: var(--color-background);
+    opacity: 1;
+}
+
+
+
+.experience-role {
+    margin-top: 2rem;
+
+    font-family: var(--font-family-primary);
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    font-weight: 500;
+}
+
+
+.experience-details {
+    margin-top: 2.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 2.5rem;
+}
+
+.experience-detail h4 {
+    margin-bottom: 0.9rem;
+
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.14rem;
+    font-weight: 400;
+}
+
+.experience-detail p {
+    color: var(--color-text);
+
+    font-family: var(--font-family-tri);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+
+.experience-detail.responsibilities {
+    grid-column: span 2;
+}
+
+.experience-detail.responsibilities ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.experience-detail.responsibilities li {
+    position: relative;
+
+    padding-left: 1.2rem;
+
+    color: var(--color-text);
+
+    font-family: var(--font-family-tri);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.experience-detail.responsibilities li::before {
+    content: "—";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--color-ascent);
+}
