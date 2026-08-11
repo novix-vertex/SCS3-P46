@@ -371,3 +371,112 @@ header.scrolled {
 .status-text span {
     margin: 0 0.4rem;
 }
+
+
+
+
+.about {
+    min-height: 100vh;
+    padding: 8rem 8rem 6rem;
+}
+
+
+.about-label {
+    margin-bottom: 2.5rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+
+.about-title {
+    max-width: 60rem;
+
+    font-family: var(--font-family-primary);
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.08rem;
+    font-weight: 500;
+}
+
+
+.about-content {
+    margin-top: 3.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+
+.about-left {
+    max-width: 43rem;
+}
+
+.about-left p {
+    margin-bottom: 1.7rem;
+
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.9;
+    font-weight: 300;
+}
+
+
+.about-right {
+    padding-left: 1.5rem;
+}
+
+
+.about-highlight {
+    max-width: 42rem;
+
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--color-ascent);
+
+    color: var(--color-text);
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+
+.about-points {
+    margin-top: 2rem;
+}
+
+.about-points li {
+    position: relative;
+
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-tri);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.about-points li::before {
+    content: "—";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: var(--color-ascent);
+    opacity: 1;
+}
+
+
