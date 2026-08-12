@@ -6,6 +6,7 @@ import { projectsData } from "./js/projects/projectsData.js";
 import { technicalData } from "./js/technical/technicalData.js";
 import { workflowData } from "./js/workflow/workflowData.js";
 import { aiToolsData, aiTopicsData, aiUsesTabsData } from "./js/ai/aiData.js";
+import { contactsData } from "./js/contacts/contactsData.js";
 
 import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
 import { educationTemplate } from "./js/educations/educationTemplate.js";
@@ -15,6 +16,7 @@ import { projectTemplate } from "./js/projects/projectTemplate.js";
 import { technicalTemplate } from "./js/technical/technicalTemplate.js";
 import { workflowTemplate } from "./js/workflow/workflowTemplate.js";
 import { aiToolsTemplate, aiTopicTemplate, aiUsesTabsTemplate } from "./js/ai/aiTemplate.js";
+import { contactTemplate } from "./js/contacts/contactTemplate.js";
 
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
@@ -46,6 +48,7 @@ renderData("#certificates-grid", certificatesData, certificateTemplate);
 renderData("#ai-topics", aiTopicsData, aiTopicTemplate);
 renderData("#ai-tools", aiToolsData, aiToolsTemplate);
 renderData("#ai-tabs", aiUsesTabsData, aiUsesTabsTemplate);
+renderData("#contact-links", contactsData, contactTemplate);
 
 
 
