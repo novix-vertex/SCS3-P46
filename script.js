@@ -2,7 +2,7 @@ import { certificatesData } from "./js/certificates/certificatesData.js";
 import { educationsData } from "./js/educations/educationsData.js";
 import { experiencesData } from "./js/experiences/experiencesData.js";
 import { primaryExpertiseData, supportingExpertiseData, technicalExpertiseData } from "./js/expertises/expertisesData.js";
-import { projectsData } from "./js/projects/projectsData.js";
+// import { projectsData } from "./js/projects/projectsData.js";
 import { technicalData } from "./js/technical/technicalData.js";
 import { workflowData } from "./js/workflow/workflowData.js";
 import { aiToolsData, aiTopicsData, aiUsesTabsData } from "./js/ai/aiData.js";
@@ -12,7 +12,7 @@ import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
 import { educationTemplate } from "./js/educations/educationTemplate.js";
 import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
 import { expertiseTemplate } from "./js/expertises/expertiseTemplate.js";
-import { projectTemplate } from "./js/projects/projectTemplate.js";
+// import { projectTemplate } from "./js/projects/projectTemplate.js";
 import { technicalTemplate } from "./js/technical/technicalTemplate.js";
 import { workflowTemplate } from "./js/workflow/workflowTemplate.js";
 import { aiToolsTemplate, aiTopicTemplate, aiUsesTabsTemplate } from "./js/ai/aiTemplate.js";
@@ -39,7 +39,7 @@ function renderData(selector, data, template) {
 renderData("#primary-expertise-tags", primaryExpertiseData, expertiseTemplate);
 renderData("#supporting-expertise-tags", supportingExpertiseData, expertiseTemplate);
 renderData("#technical-expertise-tags", technicalExpertiseData, expertiseTemplate);
-renderData("#projects-list", projectsData, projectTemplate);
+// renderData("#projects-list", projectsData, projectTemplate);
 renderData("#experiences-list", experiencesData, experienceTemplate);
 renderData("#workflow-grid", workflowData, workflowTemplate);
 renderData("#educations-list", educationsData, educationTemplate);
@@ -94,7 +94,7 @@ gsap.utils.toArray("section").forEach((section) => {
 });
 
 gsap.utils.toArray(
-    ".project-card, .experience-item, .education-item, .workflow-card, .technical-card, .certificate"
+    ".experience-item, .education-item, .workflow-card, .technical-card, .certificate"
 ).forEach((item) => {
 
     gsap.from(item, {
