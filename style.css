@@ -1238,14 +1238,8 @@ section {
     color: var(--color-secondary);
 }
 
-.footer-center2 p {
+.footer-right p {
     color: var(--color-ascent);
-}
-
-.footer-right {
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
 }
 
 .certificates-section {
