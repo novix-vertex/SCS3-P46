@@ -52,6 +52,24 @@ renderData("#contact-links", contactsData, contactTemplate);
 
 
 
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".hero h1", {
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+}, "-=0.3");
 
+gsap.fromTo(".process-item", {
+    opacity: 0,
+    x: 40
+}, {
+    opacity: 1,
+    x: 0,
+    duration: 0.7,
+    delay: 0.8,
+    ease: "expo.out",
+    stagger: 0.2
+});
 
