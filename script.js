@@ -1,3 +1,6 @@
+import { projectsData } from "./js/projects/projectsData.js";
+import { projectTemplate } from "./js/projects/projectTemplate.js";
+
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
 
@@ -7,3 +10,18 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+
+function renderProjects() {
+    const container = document.querySelector("#projects-list");
+
+    if (!container) return;
+    container.innerHTML = projectsData
+        .map(project => projectTemplate(project))
+        .join("");
+}
+
+renderProjects();
+
+
+
