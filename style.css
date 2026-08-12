@@ -551,164 +551,165 @@ section {
     margin-bottom: 1.7rem;
 }
 
-.projects-title {
-    font-family: var(--font-family-primary);
-    font-size: clamp(3.5rem, 5vw, 5rem);
-    line-height: 1;
-    letter-spacing: -0.08rem;
-    font-weight: 500;
-}
 
-
-.projects-intro {
-    margin-top: 2.5rem;
-
-    color: var(--color-muted);
-    opacity: 0.55;
-
-    font-family: var(--font-family-tri);
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-.projects-list {
-    width: 100%;
-
-    display: flex;
-    gap: 2rem;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-
-.projects-list::-webkit-scrollbar {
-    display: none;
-}
-
-.project {
-    width: 75vw;
-    min-width: 75vw;
-
+.projects-grid {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
 
-    padding: 3rem 0;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    border-top: 1px solid var(--color-border);
-
+    margin-top: 3rem;
 }
 
-.project-main {
+.project-card {
     display: flex;
     flex-direction: column;
+
+    min-width: 0;
+
+    border: 1px solid var(--color-border);
+
+    background-color: var(--color-background);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-0.4rem);
+
+    border-color: var(--color-ascent);
+}
+
+.project-image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
 }
 
 
 .project-number {
-    margin-bottom: 2rem;
+    position: absolute;
+
+    top: 1rem;
+    left: 1rem;
+
+    padding: 0.45rem 0.7rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+
+    background-color: var(--color-background);
 
     color: var(--color-ascent);
 
     font-family: var(--font-family-secondary);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     letter-spacing: 0.12rem;
 }
 
 
+.project-content {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 19rem;
+
+    padding: 1.75rem;
+}
+
+
 .project-title {
-    margin-bottom: 3rem;
+    margin: 0;
+
+    color: var(--color-text);
 
     font-family: var(--font-family-primary);
-    font-size: clamp(2.5rem, 4vw, 4.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.08rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: -0.04rem;
     font-weight: 500;
 }
 
 
 .project-objective {
-    max-width: 32rem;
+    margin-top: 2rem;
 }
 
+.project-label {
+    display: block;
 
-.project-objective h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 
     color: var(--color-ascent);
 
     font-family: var(--font-family-secondary);
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     letter-spacing: 0.12rem;
-    font-weight: 500;
 }
-
 
 .project-objective p {
+    margin: 0;
+
     color: var(--color-muted);
-    opacity: 0.6;
 
     font-family: var(--font-family-tri);
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
-
 
 .project-technologies {
     margin-top: auto;
     padding-top: 2rem;
-
-    border-top: 1px solid var(--color-border);
-
-    color: var(--color-muted);
-    opacity: 0.6;
-
-    font-family: var(--font-family-secondary);
-    font-size: 0.65rem;
-    letter-spacing: 0.1rem;
 }
 
-
-.project-technologies span {
-    color: var(--color-ascent);
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-
-.project-technologies p {
-    margin-top: 0.8rem;
-
-    color: var(--color-muted);
-    opacity: 0.7;
-
-    line-height: 1.6;
-}
-
-
-.project-side {
-    width: 100%;
-}
-
-
-.project-visual {
-    width: 100%;
-    height: 32rem;
+.technology {
+    padding: 0.45rem 0.7rem;
 
     border: 1px solid var(--color-border);
-    background-color: var(--color-surface);
+    border-radius: 2rem;
 
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    color: var(--color-muted);
 
-    transition: transform 0.4s ease;
+    font-family: var(--font-family-secondary);
+    font-size: 0.6rem;
+    letter-spacing: 0.06rem;
+
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease;
 }
 
-
-.project-visual:hover {
-    transform: scale(0.98);
+.project-card:hover .technology {
+    border-color: var(--color-ascent);
 }
 
 .experiences-list {
