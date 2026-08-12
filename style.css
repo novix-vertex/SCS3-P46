@@ -1596,3 +1596,125 @@ header.scrolled {
     border-color: var(--color-ascent);
     color: var(--color-ascent);
 }
+
+
+.certificates-section {
+    width: 100%;
+    padding: 6rem 5rem;
+    border-top: 1px solid var(--color-border);
+
+}
+
+.certificates-label {
+    margin-bottom: 2.5rem;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+
+.certificates-title {
+    font-family: var(--font-family-primary);
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.08rem;
+    font-weight: 500;
+}
+
+
+.certificates-intro {
+    margin-top: 2.5rem;
+
+    color: var(--color-muted);
+    opacity: 0.55;
+
+    font-family: var(--font-family-tri);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.certificates-grid {
+    margin-top: 3.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+}
+
+
+
+.certificate {
+    min-height: 9rem;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    transition: all 0.3s ease;
+}
+
+.certificate-number {
+    align-self: start;
+
+    color: var(--color-ascent);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+}
+
+.certificate-info h3 {
+    color: var(--color-text);
+
+    font-family: var(--font-family-primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.certificate-info p {
+    margin-top: 0.5rem;
+
+    color: var(--color-secondary);
+
+    font-family: var(--font-family-tri);
+    font-size: 0.8rem;
+}
+
+.certificate-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+
+    color: var(--color-secondary);
+
+    font-family: var(--font-family-secondary);
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.certificate-meta span:last-child {
+    color: var(--color-ascent);
+}
+
+
+
+.certificate:hover {
+    background-color: var(--color-surface);
+}
+
+.certificate:hover .certificate-info h3 {
+    color: var(--color-ascent);
+}
