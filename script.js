@@ -2,6 +2,8 @@ import { certificatesData } from "./js/certificates/certificatesData.js";
 import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
 import { experiencesData } from "./js/experiences/experiencesData.js";
 import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
+import { primaryExpertiseData, supportingExpertiseData, technicalExpertiseData } from "./js/expertises/expertisesData.js";
+import { expertiseTemplate } from "./js/expertises/expertiseTemplate.js";
 
 import { projectsData } from "./js/projects/projectsData.js";
 import { projectTemplate } from "./js/projects/projectTemplate.js";
@@ -43,9 +45,28 @@ function renderCertificates() {
 }
 
 
+function renderExpertises() {
+    const primaryContainer = document.querySelector("#primary-expertise-tags");
+    const supportingContainer = document.querySelector("#supporting-expertise-tags");
+    const technicalContainer = document.querySelector("#technical-expertise-tags");
+    if (!primaryContainer) return;
+    if (!supportingContainer) return;
+    if (!technicalContainer) return;
+    primaryContainer.innerHTML = primaryExpertiseData
+        .map(expertise => expertiseTemplate(expertise))
+        .join("");
+    supportingContainer.innerHTML = supportingExpertiseData
+        .map(expertise => expertiseTemplate(expertise))
+        .join("");
+    technicalContainer.innerHTML = technicalExpertiseData
+        .map(expertise => expertiseTemplate(expertise))
+        .join("");
+}
+
 renderProjects();
 renderExperiences();
 renderCertificates();
+renderExpertises();
 
 
 
