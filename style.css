@@ -34,9 +34,9 @@
     --color-project-border: #ffffff18;
     --color-project-muted: #ffffff08;
 
-    --font-family-primary: grotesk, sans-serif;
-    --font-family-secondary: jetbrain, monospace;
-    --font-family-tri: inter, sans-serif;
+    --font-family-primary: 'grotesk', sans-serif;
+    --font-family-secondary: 'jetbrain', monospace;
+    --font-family-tri: 'inter', sans-serif;
 }
 
 * {
@@ -212,8 +212,8 @@ section {
     background-color: var(--color-border);
 }
 
-.flex{
-    display:flex;
+.flex {
+    display: flex;
 }
 
 .hero {
