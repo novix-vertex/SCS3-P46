@@ -7,6 +7,8 @@ import { expertiseTemplate } from "./js/expertises/expertiseTemplate.js";
 
 import { projectsData } from "./js/projects/projectsData.js";
 import { projectTemplate } from "./js/projects/projectTemplate.js";
+import { workflowData } from "./js/workflow/workflowData.js";
+import { workflowTemplate } from "./js/workflow/workflowTemplate.js";
 
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
@@ -63,10 +65,19 @@ function renderExpertises() {
         .join("");
 }
 
+function renderWorkflow() {
+    const container = document.querySelector("#workflow-grid");
+    if (!container) return;
+    container.innerHTML = workflowData
+        .map(workflow => workflowTemplate(workflow))
+        .join("");
+}
+
 renderProjects();
 renderExperiences();
 renderCertificates();
 renderExpertises();
+renderWorkflow();
 
 
 
