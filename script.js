@@ -1,15 +1,17 @@
 import { certificatesData } from "./js/certificates/certificatesData.js";
-import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
 import { educationsData } from "./js/educations/educationsData.js";
-import { educationTemplate } from "./js/educations/educationTemplate.js";
 import { experiencesData } from "./js/experiences/experiencesData.js";
-import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
 import { primaryExpertiseData, supportingExpertiseData, technicalExpertiseData } from "./js/expertises/expertisesData.js";
-import { expertiseTemplate } from "./js/expertises/expertiseTemplate.js";
-
 import { projectsData } from "./js/projects/projectsData.js";
-import { projectTemplate } from "./js/projects/projectTemplate.js";
+import { technicalData } from "./js/technical/technicalData.js";
 import { workflowData } from "./js/workflow/workflowData.js";
+
+import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
+import { educationTemplate } from "./js/educations/educationTemplate.js";
+import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
+import { expertiseTemplate } from "./js/expertises/expertiseTemplate.js";
+import { projectTemplate } from "./js/projects/projectTemplate.js";
+import { technicalTemplate } from "./js/technical/technicalTemplate.js";
 import { workflowTemplate } from "./js/workflow/workflowTemplate.js";
 
 window.addEventListener("scroll", () => {
@@ -22,73 +24,24 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
-function renderProjects() {
-    const container = document.querySelector("#projects-list");
-
+function renderData(selector, data, template) {
+    const container = document.querySelector(selector);
     if (!container) return;
-    container.innerHTML = projectsData
-        .map(project => projectTemplate(project))
+    container.innerHTML = data
+        .map(item => template(item))
         .join("");
 }
 
-function renderExperiences() {
-    const container = document.querySelector("#experiences-list");
-    if (!container) return;
-    container.innerHTML = experiencesData
-        .map(experience => experienceTemplate(experience))
-        .join("");
-}
+renderData("#primary-expertise-tags", primaryExpertiseData, expertiseTemplate);
+renderData("#supporting-expertise-tags", supportingExpertiseData, expertiseTemplate);
+renderData("#technical-expertise-tags", technicalExpertiseData, expertiseTemplate);
+renderData("#projects-list", projectsData, projectTemplate);
+renderData("#experiences-list", experiencesData, experienceTemplate);
+renderData("#workflow-grid", workflowData, workflowTemplate);
+renderData("#educations-list", educationsData, educationTemplate);
+renderData("#technical-grid", technicalData, technicalTemplate);
+renderData("#certificates-grid", certificatesData, certificateTemplate);
 
-function renderCertificates() {
-    const container = document.querySelector("#certificates-grid");
-    if (!container) return;
-    container.innerHTML = certificatesData
-        .map(certificate => certificateTemplate(certificate))
-        .join("");
-}
-
-
-function renderExpertises() {
-    const primaryContainer = document.querySelector("#primary-expertise-tags");
-    const supportingContainer = document.querySelector("#supporting-expertise-tags");
-    const technicalContainer = document.querySelector("#technical-expertise-tags");
-    if (!primaryContainer) return;
-    if (!supportingContainer) return;
-    if (!technicalContainer) return;
-    primaryContainer.innerHTML = primaryExpertiseData
-        .map(expertise => expertiseTemplate(expertise))
-        .join("");
-    supportingContainer.innerHTML = supportingExpertiseData
-        .map(expertise => expertiseTemplate(expertise))
-        .join("");
-    technicalContainer.innerHTML = technicalExpertiseData
-        .map(expertise => expertiseTemplate(expertise))
-        .join("");
-}
-
-function renderWorkflow() {
-    const container = document.querySelector("#workflow-grid");
-    if (!container) return;
-    container.innerHTML = workflowData
-        .map(workflow => workflowTemplate(workflow))
-        .join("");
-}
-
-function renderEducations() {
-    const container = document.querySelector("#educations-list");
-    if (!container) return;
-    container.innerHTML = educationsData
-        .map(education => educationTemplate(education))
-        .join("");
-}
-
-renderProjects();
-renderExperiences();
-renderCertificates();
-renderExpertises();
-renderWorkflow();
-renderEducations();
 
 
 
