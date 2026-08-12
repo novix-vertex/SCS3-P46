@@ -9,6 +9,7 @@ export const primaryExpertiseData = [
     "DEPENDENCY MANAGEMENT",
     "TEAM COORDINATION",
     "DELIVERY MANAGEMENT",
+    "AGILE",
     "WATERFALL",
     "KANBAN"
 ];
