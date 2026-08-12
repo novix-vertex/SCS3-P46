@@ -3,7 +3,6 @@ export const technicalData = [
     "label": "ENGINEERING CONTEXT",
     "skills": [
       "APIs",
-      "Postman",
       "Version Control",
       "Docker",
       "CI/CD"
@@ -25,8 +24,9 @@ export const technicalData = [
     ]
   },
   {
-    "label": "PRODUCT TECHNOLOGY",
+    "label": "PRODUCT",
     "skills": [
+      "Discovery",
       "Quality",
       "Performance",
       "Consistency",
@@ -40,14 +40,12 @@ export const technicalData = [
       "Google Meet",
       "Zoom"
     ]
-  },{
-    "label": "Basic Data Analytics Understanding",
+  }, {
+    "label": "Testing",
     "skills": [
-      "PowerBI",
-      "Pyhton",
-      "NumPy",
-      "Panda",
-      "Matplotlib"
+      "Postman",
+      "Test Cases",
+      "Acceptance Criteria"
     ]
   }
 ];
