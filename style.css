@@ -846,6 +846,8 @@ section {
     color: var(--color-ascent);
 }
 
+
+
 .education-item {
     display: grid;
     grid-template-columns: 13rem 1fr;
@@ -879,16 +881,6 @@ section {
     font-weight: 500;
 }
 
-.education-institution {
-    margin-top: 1.5rem;
-
-    color: var(--color-muted);
-    opacity: 0.6;
-
-    font-family: var(--font-family-tri);
-    font-size: 1rem;
-    line-height: 1.5;
-}
 
 .education-areas {
     margin-top: 1.8rem;
