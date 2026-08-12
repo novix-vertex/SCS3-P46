@@ -1,14 +1,16 @@
 export const primaryExpertiseData = [
     "REQUIREMENTS GATHERING",
     "PROJECT PLANNING",
-    "ROADMAPS",
-    "SPRINT PLANNING",
+    "SCRUM EVENTS",
+    "CROSS-FUNCTIONAL TEAM",
     "TASK MANAGEMENT",
     "STAKEHOLDER MANAGEMENT",
     "RISK MANAGEMENT",
     "DEPENDENCY MANAGEMENT",
     "TEAM COORDINATION",
-    "DELIVERY MANAGEMENT"
+    "DELIVERY MANAGEMENT",
+    "WATERFALL",
+    "KANBAN"
 ];
 
 export const supportingExpertiseData = [
@@ -27,6 +29,7 @@ export const technicalExpertiseData = [
     "JAVASCRIPT",
     "REACT JS",
     "APIS",
-    "GIT / GITHUB / GITLAB",
+    "SQL",
+    "GIT / GITHUB / GITLAB"
 ];
 

@@ -1,19 +1,27 @@
 export const technicalData = [
   {
-    "label": "WEB FUNDAMENTALS",
-    "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  },
-  {
     "label": "ENGINEERING CONTEXT",
     "skills": [
       "APIs",
-      "Git",
-      "GitHub",
-      "Development workflows"
+      "Postman",
+      "Version Control",
+      "Docker",
+      "CI/CD"
+    ]
+  },
+  {
+    "label": "REPORTING",
+    "skills": [
+      "MS-Office",
+      "PowerBI"
+    ]
+  },
+  {
+    "label": "DESIGN",
+    "skills": [
+      "Figma",
+      "Balasmiq",
+      "Canva"
     ]
   },
   {
@@ -21,16 +29,25 @@ export const technicalData = [
     "skills": [
       "Quality",
       "Performance",
-      "Consistency"
+      "Consistency",
+      "On-Time"
     ]
   },
   {
     "label": "COLLABORATION",
     "skills": [
-      "Figma",
-      "GitHub",
-      "Development tools",
-      "Project management tools"
+      "Slack",
+      "Google Meet",
+      "Zoom"
+    ]
+  },{
+    "label": "Basic Data Analytics",
+    "skills": [
+      "PowerBI",
+      "Pyhton",
+      "NumPy",
+      "Panda",
+      "Matplotlib"
     ]
   }
 ];
