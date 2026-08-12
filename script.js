@@ -1,3 +1,5 @@
+import { certificatesData } from "./js/certificates/certificatesData.js";
+import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
 import { experiencesData } from "./js/experiences/experiencesData.js";
 import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
 
@@ -32,9 +34,18 @@ function renderExperiences() {
         .join("");
 }
 
+function renderCertificates() {
+    const container = document.querySelector("#certificates-grid");
+    if (!container) return;
+    container.innerHTML = certificatesData
+        .map(certificate => certificateTemplate(certificate))
+        .join("");
+}
+
 
 renderProjects();
 renderExperiences();
+renderCertificates();
 
 
 
