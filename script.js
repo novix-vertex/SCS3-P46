@@ -1,5 +1,7 @@
 import { certificatesData } from "./js/certificates/certificatesData.js";
 import { certificateTemplate } from "./js/certificates/certificateTemplate.js";
+import { educationsData } from "./js/educations/educationsData.js";
+import { educationTemplate } from "./js/educations/educationTemplate.js";
 import { experiencesData } from "./js/experiences/experiencesData.js";
 import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
 import { primaryExpertiseData, supportingExpertiseData, technicalExpertiseData } from "./js/expertises/expertisesData.js";
@@ -73,11 +75,20 @@ function renderWorkflow() {
         .join("");
 }
 
+function renderEducations() {
+    const container = document.querySelector("#educations-list");
+    if (!container) return;
+    container.innerHTML = educationsData
+        .map(education => educationTemplate(education))
+        .join("");
+}
+
 renderProjects();
 renderExperiences();
 renderCertificates();
 renderExpertises();
 renderWorkflow();
+renderEducations();
 
 
 
