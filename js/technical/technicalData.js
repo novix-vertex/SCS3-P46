@@ -41,7 +41,7 @@ export const technicalData = [
       "Zoom"
     ]
   },{
-    "label": "Basic Data Analytics",
+    "label": "Basic Data Analytics Understanding",
     "skills": [
       "PowerBI",
       "Pyhton",
