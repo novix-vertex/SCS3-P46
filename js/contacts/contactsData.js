@@ -1,17 +1,17 @@
 export const contactsData = [
   {
     "label": "Email",
-    "link": "mailto:your@email.com",
-    "value": "https://www.google.com"
+    "link": "mailto:chirag0610@hotmail.com",
+    "value": "chirag0610@hotmail.com"
   },
   {
     "label": "LinkedIn",
-    "link": "https://www.google.com",
-    "value": "https://www.google.com"
+    "link": "https://www.linkedin.com/in/chirag-jain-a80a03321",
+    "value": "Chirag Jain"
   },
   {
     "label": "GitHub",
-    "link": "https://www.google.com",
-    "value": "https://www.google.com"
+    "link": "https://www.github.com/novix-vertex",
+    "value": "novix-vertex"
   }
 ]
