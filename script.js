@@ -54,13 +54,6 @@ renderData("#contact-links", contactsData, contactTemplate);
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".hero h1", {
-    y: 30,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out"
-}, "-=0.3");
-
 gsap.fromTo(".process-item", {
     opacity: 0,
     x: 40
@@ -71,5 +64,51 @@ gsap.fromTo(".process-item", {
     delay: 0.8,
     ease: "expo.out",
     stagger: 0.2
+});
+
+gsap.from(".hero-content h1", {
+    xPercent: -100,
+    duration: 1.2,
+    ease: "power3.out",
+    delay: 0.2
+});
+
+gsap.utils.toArray("section").forEach((section) => {
+
+    gsap.from(section.querySelectorAll(
+        ".section-label, .section-title, .section-intro, .section-divider"
+    ), {
+        y: 35,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.18,
+        ease: "power3.out",
+
+        scrollTrigger: {
+            trigger: section,
+            start: "top 75%",
+            toggleActions: "play reverse play reverse"
+        }
+    });
+
+});
+
+gsap.utils.toArray(
+    ".project-card, .experience-item, .education-item, .workflow-card, .technical-card, .certificate"
+).forEach((item) => {
+
+    gsap.from(item, {
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+
+        scrollTrigger: {
+            trigger: item,
+            start: "top 82%",
+            toggleActions: "play reverse play reverse"
+        }
+    });
+
 });
 
