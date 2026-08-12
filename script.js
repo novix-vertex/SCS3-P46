@@ -1,3 +1,6 @@
+import { experiencesData } from "./js/experiences/experiencesData.js";
+import { experienceTemplate } from "./js/experiences/experienceTemplate.js";
+
 import { projectsData } from "./js/projects/projectsData.js";
 import { projectTemplate } from "./js/projects/projectTemplate.js";
 
@@ -21,7 +24,19 @@ function renderProjects() {
         .join("");
 }
 
+function renderExperiences() {
+    const container = document.querySelector("#experiences-list");
+    if (!container) return;
+    container.innerHTML = experiencesData
+        .map(experience => experienceTemplate(experience))
+        .join("");
+}
+
+
 renderProjects();
+renderExperiences();
+
+
 
 
 

@@ -582,6 +582,7 @@ section {
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
+
 .projects-list::-webkit-scrollbar {
     display: none;
 }
@@ -708,6 +709,10 @@ section {
 
 .project-visual:hover {
     transform: scale(0.98);
+}
+
+.experiences-list {
+    width: 100%;
 }
 
 .experience-item {
